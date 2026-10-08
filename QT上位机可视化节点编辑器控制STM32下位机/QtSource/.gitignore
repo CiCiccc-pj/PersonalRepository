@@ -1,0 +1,9 @@
+# 构建产物目录
+build/
+
+# Qt Creator 工程配置
+.qtcreator/
+
+# Qt Creator 用户级配置
+*.user
+CMakeLists.txt.user*
