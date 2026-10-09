@@ -4,14 +4,13 @@
 
 `C++17` · `Qt 6 / 5` · `QtNodes` · `CMake` · `STM32F103` · `HAL` · `UART`
 
-<!-- 界面截图：把图片放到与本文件同级的 docs/images/ 目录，然后取消下面注释
+## 演示：读取下位机温湿度
+
+下面这段录屏演示上位机运行流程图、通过「温湿度」节点向 STM32 下位机请求一次 DHT11 采样，并读回温度 / 湿度数据的完整过程：
+
 <p align="center">
-  <img src="docs/images/canvas.png" width="85%" alt="节点画布">
+  <img src="docs/images/demo-temphumi.gif" width="85%" alt="演示：读取下位机温湿度">
 </p>
-<p align="center">
-  <img src="docs/images/demo-flash3.png" width="85%" alt="示例流程：闪灯 3 次">
-</p>
--->
 
 ---
 
@@ -89,6 +88,8 @@ flowchart LR
 
 ```
 QT上位机可视化节点编辑器控制STM32下位机/
+├── README.md                  # 本文件
+├── docs/images/               # 演示图（本 README 引用）
 ├── QtSource/                  # 上位机（Qt 桌面程序）
 │   ├── src/
 │   │   ├── core/              # 数据载体、图模型与执行引擎、串口管理
